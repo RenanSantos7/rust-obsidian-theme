@@ -23,6 +23,11 @@
 }
 
 body {
+	--accent-color: hsl(
+		var(--accent-h),
+		var(--accent-s),
+		var(--accent-l)
+	);
 	--accent-secondary: hsl(
 		var(--accent-secondary-h),
 		var(--accent-secondary-s),
@@ -81,19 +86,24 @@ svg:not(.mod-right svg) * {
 
 /* Headers */
 
-.inline-title, .el-h1, .cm-header-1 {
+.inline-title,
+.el-h1,
+.cm-header-1 {
 	color: var(--color-accent);
 }
 
-.el-h2, .cm-header-2 {
+.el-h2,
+.cm-header-2 {
 	color: var(--accent-secondary);
 }
 
-.el-h3, .cm-header-3 {
+.el-h3,
+.cm-header-3 {
 	color: var(--color-accent-2);
 }
 
-.el-h4, .cm-header-4 {
+.el-h4,
+.cm-header-4 {
 	color: hsl(
 		var(--accent-secondary-h),
 		calc(var(--accent-secondary-s) * 0.8),
@@ -109,7 +119,28 @@ svg:not(.mod-right svg) * {
 	padding-bottom: 1em;
 }
 
+.callout[data-callout="chapter"] {
+	--callout-color: 210, 119, 45;
+	--callout-icon: bookmark;
+}
+
 .callout[data-callout="vtbm"] {
 	--callout-color: 139, 106, 49;
 	--callout-icon: lamp-desk;
+}
+
+/* % Others */
+
+.figcaption {
+	margin-top: -12px;
+	font-style: italic;
+	opacity: 0.75;
+
+	& strong {
+		color: var(--accent-secondary);
+	}
+}
+
+ol li::marker {
+	color: var(--accent-secondary);
 }

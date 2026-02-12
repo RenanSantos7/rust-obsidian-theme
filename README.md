@@ -1,4 +1,3 @@
-
 # Rust Obsidian Theme
 
 A modern and clean Obsidian theme inspired by Rust programming language documentation aesthetics.
@@ -38,4 +37,4 @@ MIT License - Feel free to use and modify
 
 ---
 
-*For issues or suggestions, please open an issue in the theme repository.*
+*For issues or suggestions, please open an issue in the theme repository.* 
